@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Domain.Common
 {
-    internal class BaseEntity1
+    public abstract class BaseEntity
     {
+
+        public int Id { get; set; }
+
+        public bool SoftDelete { get; set; } 
+
+        public DateTime CreatedAt { get; set; } 
     }
 }
